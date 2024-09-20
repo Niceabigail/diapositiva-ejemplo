@@ -5,13 +5,12 @@ format:
   revealjs:
     theme: simple
     slide-number: true
-    incremental: true #
-    transition: slide # transicion de diapositivas como desvanecer
-    transition-speed: slow # rapidez de la transicion 
+    incremental: true
+    transition: convex
+    transition-speed: slow
     code-overlays: true
     width: 1280
     height: 720
-    scrollable: true
 title-slide-attributes:
   data-background-image: "https://image.slidesdocs.com/responsive-images/background/blue-abstract-texture-polygon-technology-nature-powerpoint-background_94e8175035__960_540.jpg"
   data-background-size: cover
@@ -58,23 +57,15 @@ Aquí hay un top secret.
 
 ## Imagen desde la Web
 
-![TEXTO ALTERNATIVO](exports/figs/peces_figura_2.png)
-![Quarto Logo](https://quarto.org/images/demo-jupyter-plain.png)
+![Quarto Logo](https://quarto.org/img/quarto-logo.png)
 
 
 
 ## Colocar un gran texto que nunca se desborda
 
 ::: {.r-fit-text}
-masterX Academy!!!
+masterX
 :::
-
-## {.center}
-
-::: {.r-fit-text}
-Configuraciones
-:::
-
 
 ## Añadiendo fragmentos 
 
@@ -96,11 +87,6 @@ Fade in, then out
 
 ::: {.fragment .fade-up}
 Slide up while fading in
-```{r}
-#CODIGOS
-plot(1:100)
-```
-
 :::
 
 
@@ -181,7 +167,7 @@ leaflet() %>%
 ## Insertando interactividad: Plotly
 
 ```{r}
-  #| echo: false
+#| echo: false
 #| eval: true
 #| fig-width: 12
 #| fig-height: 6.5
